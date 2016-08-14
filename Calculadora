@@ -1,0 +1,125 @@
+# Java
+# Codigos  Java 2016.2
+
+import java.util.Scanner;
+
+
+public class Calculator {
+	
+	public static int soma(int num1,int num2){
+		int soma;
+		soma= num1+num2;
+		return soma;
+	}
+	public static int sub(int num1,int num2){
+		int sub;
+		sub= num1-num2;
+		return sub;
+	}
+	public static int div(int num1,int num2){
+		int div;
+		div= num1/num2;
+		return div;
+	}
+	public static int mult(int num1,int num2){
+		int mult;
+		mult= num1*num2;
+		return mult;
+	}
+	
+	public static void main(String[] args) {
+		
+		int valor1,valor2,resultado,x = 5;
+		
+			
+		do{	
+		System.out.printf("\n-----------------------\n");
+		System.out.printf("------CALCULADORA------\n");
+		System.out.printf("-----------------------\n");
+		System.out.printf("SOMA: 1 \n");
+		System.out.printf("SUBTRACAO: 2 \n");
+		System.out.printf("DIVISAO: 3 \n");
+		System.out.printf("MULTIPLICACAO: 4 \n");
+		System.out.printf("SAIR: 0 \n");
+		
+		Scanner opcao = new Scanner(System.in);
+		System.out.print("Escolha uma opcao:");
+		x =  opcao.nextInt();
+		
+		
+				
+	  	
+		    if(x == 1){
+			System.out.println("Voce escolheu a opcao soma.");
+			Scanner entrada = new Scanner(System.in);
+			System.out.print("Entre com o primeiro valor:");
+			valor1 = entrada.nextInt();
+					
+			Scanner entrada2 = new Scanner(System.in);		
+			System.out.print("Entre com o segundo valor:");
+			valor2 = entrada2.nextInt()	;	
+					
+			resultado = soma(valor1,valor2)	;
+			
+			System.out.printf("O resultado da soma é: %d",resultado);
+			
+		}
+		
+		if(x ==2){
+			System.out.println("Voce escolheu a opcao subtracao.");
+			Scanner entrada = new Scanner(System.in);
+			System.out.print("Entre com o primeiro valor:");
+			valor1 = entrada.nextInt();
+					
+			Scanner entrada2 = new Scanner(System.in);		
+			System.out.print("Entre com o segundo valor:");
+			valor2 = entrada2.nextInt()	;	
+					
+			resultado = sub(valor1,valor2)	;
+			
+			System.out.printf("O resultado da sub é: %d",resultado);
+			
+		}
+		if(x==3){
+			System.out.println("Voce escolheu a opcao divisao.");
+			Scanner entrada = new Scanner(System.in);
+			System.out.print("Entre com o primeiro valor:");
+			valor1 = entrada.nextInt();
+					
+			Scanner entrada2 = new Scanner(System.in);		
+			System.out.print("Entre com o segundo valor:");
+			valor2 = entrada2.nextInt()	;	
+					
+			resultado = div(valor1,valor2)	;
+			
+			System.out.printf("O resultado da div é: %d",resultado);
+			
+		}
+		
+		if(x ==4){
+			System.out.println("Voce escolheu a opcao multiplicacao.");
+			Scanner entrada = new Scanner(System.in);
+			System.out.print("Entre com o primeiro valor:");
+			valor1 = entrada.nextInt();
+					
+			Scanner entrada2 = new Scanner(System.in);		
+			System.out.print("Entre com o segundo valor:");
+			valor2 = entrada2.nextInt()	;	
+					
+			resultado = mult(valor1,valor2)	;
+			
+			System.out.printf("O resultado da mult é: %d ",resultado);
+			
+		}
+		
+		
+	  }
+		while(x!=0); 
+		System.out.println("Bye Bye");
+	 }
+	  	
+	
+	
+
+}
+
